@@ -1,6 +1,6 @@
-## Welcome to Pelham's ECE 4760 final project page!
+# Welcome to Pelham Bergesen's ECE 4760 final project page!
 
-# Project Introduction
+## Project Introduction
 
 ECE 4760 is a microcontrollers class, so the standard platform we use for all our projects is the Raspberry Pi Pico. We code in C and use different hardware periperals to make our microcontroller perform different functions, such as emulating birdsong and implementing PID control. For my final project, I drew on a couple functions we had worked on earlier in the year, specifically analog-to-digital conversion, direct digital synthesis, and PWM signal generation.
 

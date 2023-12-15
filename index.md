@@ -24,7 +24,7 @@ As far as I am concerned, my design did not violate any patents or copyrights, b
 
 The most infuriating part of my program design was decoding the MIDI outputs from my controller. This journey started with strange diagrams from the internet, telling me that I only needed to tap into two of the five prongs on the MIDI cable, as shown in the diagram below.
 
-[insert picture of midi cable]
+<img src="midiwire.jpg" height="250" width="500">
 
 Once I tapped into this cable, I was able to see the signals coming from the MIDI controller. They looked like this when isolating them on the oscilloscope (see below).
 

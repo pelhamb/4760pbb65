@@ -75,13 +75,13 @@ The group approves the video for inclusion on the course youtube channel.
 
 ## Appendix B (References & Sources)
 
-References
+**References**
 
 1. MIDI protocol reference
 
 https://people.carleton.edu/~jellinge/m208w14/pdf/02MIDIBasics_doc.pdf
 
-Picture Sources
+**Picture Sources**
 
 All pictures are taken by me, unless specified here.
 

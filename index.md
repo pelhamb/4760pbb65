@@ -28,7 +28,7 @@ The most infuriating part of my program design was decoding the MIDI outputs fro
 
 Once I tapped into this cable, I was able to see the signals coming from the MIDI controller. They looked like this when isolating them on the oscilloscope (see below).
 
-<img src="trace.jpg" height="500" width="300">
+<img src="trace.jpg" height="600" width="450">
 
 I noticed that these signals were too high in voltage to be read by my Pico’s UART interface, so I dropped the signal’s voltage by using two diodes in series. This brought the signal back down to a level that could be safely read by the Pico. I then wrote code that would read the incoming signals via this UART channel and output them to my serial monitor. 
 

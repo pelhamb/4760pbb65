@@ -22,7 +22,7 @@ As far as I am concerned, my design did not violate any patents or copyrights, b
 
 ## Program and Hardware Design
 
-The most infuriating part of my program design was decoding the MIDI outputs from my controller. This journey started with strange diagrams from the internet, telling me that I only needed to tap into two of the five prongs on the MIDI cable, as shown in the diagram below
+The most infuriating part of my program design was decoding the MIDI outputs from my controller. This journey started with strange diagrams from the internet, telling me that I only needed to tap into two of the five prongs on the MIDI cable, as shown in the diagram below.
 
 [insert picture of midi cable]
 
@@ -30,7 +30,7 @@ Once I tapped into this cable, I was able to see the signals coming from the MID
 
 [insert picture of oscilloscope]
 
-I noticed that these signals were too high in voltage to be read by my Pico’s UART interface, so I dropped the signal’s voltage by using two diodes in series. This brought the signal back down to a level that could be safely read by the pico. I then wrote code that would read the incoming signals via this UART channel and output them to my serial monitor so they could 
+I noticed that these signals were too high in voltage to be read by my Pico’s UART interface, so I dropped the signal’s voltage by using two diodes in series. This brought the signal back down to a level that could be safely read by the pico. I then wrote code that would read the incoming signals via this UART channel and output them to my serial monitor. Upon inspecting this output, I determined that the signals I was receiving were reliable and could be used to identify which note was pressed. For example, the signature 3-byte sequence for the lowest C note on my keyboard was (115 59 0), the lowest D was (51 59 0), and the lowest E was (243 59 0). 
 
 ## Results
 
@@ -42,5 +42,5 @@ I set my sights high, as this is a highly expandable project idea, and I planned
 
 To [APPENDIX A (Permissions)](appendixa.md)
 
-To [APPENDIX B (Sources)](appendixb.md)
+To [APPENDIX B (References & Sources)](appendixb.md)
 

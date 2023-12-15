@@ -1,4 +1,4 @@
-## Sources for images
+## References and Sources
 
 JD-XI Picture
 

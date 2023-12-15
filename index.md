@@ -6,6 +6,10 @@ ECE 4760 is a microcontrollers class, so the standard platform we use for all ou
 
 My project was turning my Raspberry Pi Pico microcontroller into a synthesizer, controlled by a MIDI keyboard output (MIDI is a method of containing and transmitting musical information from controllers to instruments). This MIDI control was inputted into the Pico via a UART channel, where the Pico then read the bytes transmitted in the MIDI message and decoded which frequency to output. This frequency was generated via PWM, so my final output sound was a square wave, resulting in a classic synth sound.
 
+My project setup is pictured below, with the controller on the left, the synth (Pico) in the middle, and my computer on the right reading the serial output from the Pico.
+
+<img src="notclose.jpg" height="500" width="700">
+
 ## High Level Design
 
 The source of my project idea was actually my MIDI controller itself, the Roland JD-XI. While I used it only as a MIDI controller for my project, this keyboard has a lot of the functionality I considered implementing for my final project, such as the ability to swap between square, sine, triangle, and sawtooth waves. The JD-XI also has an effects chain, toggleable from the keyboard itself, with potentiometers to determine the amount of effect that is applied to the output sound. A picture of the JD-XI is below.
@@ -60,6 +64,8 @@ The design had no real safety concerns, except for protecting my instruments and
 ## Conclusions
 
 I set my sights high, as this is a highly expandable project idea, and I planned to be able to generate sound via different waveforms, such as square waves and sine waves. If I had time, I would have added some analog effects to the synthesizer output, normalizing for the different voltages required by 1/4 inch and 3 mm headphone jacks.
+
+Next time, I would have made sure that my UART setup was correct before diving into deconding the signals I received. It hadn't even occured to me that the read could be completely screwed up by being active high with an active low input. I also would have more thoroughly inspected the signals I received from my MIDI controller. to ensure that they were being read correctly.
 
 ## Appendix A (Permissions)
 

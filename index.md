@@ -61,8 +61,24 @@ The design had no real safety concerns, except for protecting my instruments and
 
 I set my sights high, as this is a highly expandable project idea, and I planned to be able to generate sound via different waveforms, such as square waves and sine waves. If I had time, I would have added some analog effects to the synthesizer output, normalizing for the different voltages required by 1/4 inch and 3 mm headphone jacks.
 
-## Appendices
+## Appendix A (Permissions)
 
-To [APPENDIX A (Permissions)](appendixa.md)
+The group approves this report for inclusion on the course website.
 
-To [APPENDIX B (References & Sources)](appendixb.md)
+The group approves the video for inclusion on the course youtube channel.
+
+## Appendix B (References & Sources)
+
+References
+
+1. MIDI protocol reference
+
+https://people.carleton.edu/~jellinge/m208w14/pdf/02MIDIBasics_doc.pdf
+
+Picture Sources
+
+All pictures are taken by me, unless specified here.
+
+1. JD-XI Picture
+
+https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_35/356623/9838014_800.jpg

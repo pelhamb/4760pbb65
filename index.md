@@ -52,10 +52,9 @@ Speaking of sine waves, we had implemented a Direct Digital Synthesis algorithm 
 
 ## Results
 
-I was able to verify that the PWM waves I generated were outputting sound at the proper frequency, accurately to at least the nearest tenth of a Hertz which is very good on a musical level. As you go up in frequency, small decimal differences in Hz are unhearable to the average human ear, and I though the scale I was playing sounded exactly right. Below is a video with me playing a few notes.
+I was able to verify that the PWM waves I generated were outputting sound at the proper frequency, accurately to at least the nearest tenth of a Hertz which is very good on a musical level. As you go up in frequency, small decimal differences in Hz are unhearable to the average human ear, and I though the scale I was playing sounded exactly right. Below is a video with me playing a few notes and demonstrating the final project.
 
-<video width="700" height="500" src="couple.MOV" type="video/mov" autoplay preload="auto">
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gv6tslaxl0o?si=BSM5u68d-LTZGdUH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 I think the limiting factor in terms of the speed of my program was not the logic preceding which frequency to output, but more likely the UART reading speed combined with overlap of MIDI messages. This meant that sometimes if I switched between notes very quickly, there would be small gaps where the off signal overrode the new signal or the new signal and the old note had a gap due to this off and then onn behavior. There was no delay when switching to a note while the other note was help down, though, so it's possible this issue has more to do with my previously discussed note off protocol than anything else. 
 
